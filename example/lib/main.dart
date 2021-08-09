@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    requestPermission();
+  //  requestPermission();
   }
 
   void _incrementCounter() async {
@@ -68,15 +68,15 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {});
   }
 
-  Future<void> requestPermission() async {
-    await PermissionHandler().requestPermissions([
-      PermissionGroup.camera,
-      PermissionGroup.microphone,
-      PermissionGroup.storage,
-      PermissionGroup.photos,
-      PermissionGroup.mediaLibrary,
-    ]);
-  }
+//   Future<void> requestPermission() async {
+//     await PermissionHandler().requestPermissions([
+//       PermissionGroup.camera,
+//       PermissionGroup.microphone,
+//       PermissionGroup.storage,
+//       PermissionGroup.photos,
+//       PermissionGroup.mediaLibrary,
+//     ]);
+//   }
 
   @override
   Widget build(BuildContext context) {
